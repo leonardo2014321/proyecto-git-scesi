@@ -9,4 +9,12 @@ export function save(key, data) {
   }
 }
 
-
+export function load(key, fallback = null) {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw !== null ? JSON.parse(raw) : fallback;
+  } catch (e) {
+    console.warn("No se pudo leer localStorage:", e);
+    return fallback;
+  }
+}
