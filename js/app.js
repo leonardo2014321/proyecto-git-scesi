@@ -23,6 +23,18 @@ function renderResources() {
     state.activeCategory
   );
 
+  const hasResults = Object.values(filtered)
+    .some(items => items.length > 0);
+
+  if (!hasResults) {
+    app.innerHTML = `
+      <p class="empty-msg">
+        😕 No se encontraron recursos
+      </p>
+    `;
+    return;
+  }
+
   Object.entries(filtered).forEach(([category, items]) => {
     if (items.length > 0) {
       app.appendChild(
