@@ -20,7 +20,9 @@ function renderResources() {
   const filtered = applyFilters(
     resources,
     state.searchText,
-    state.activeCategory
+    state.activeCategory,
+    state.showFavOnly,
+    getFavorites()
   );
 
   const hasResults = Object.values(filtered)
@@ -48,5 +50,13 @@ document
   .getElementById("searchInput")
   .addEventListener("input", (e) => {
     state.searchText = e.target.value;
+    renderResources();
+  });
+
+
+  const btnFav = document.getElementById("btnFavoritos");
+  btnFav.addEventListener("click", () => {
+    state.showFavOnly = !state.showFavOnly;
+    btnFav.classList.toggle("active",state.showFavOnly);
     renderResources();
   });
