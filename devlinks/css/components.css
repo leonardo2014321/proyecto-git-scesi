@@ -1,0 +1,184 @@
+/* ===== CARD ===== */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+  backdrop-filter: blur(12px);
+}
+
+.card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 20px var(--primary-dim);
+  transform: translateY(-2px);
+}
+
+/* Card header: icono + tag */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-icon .material-symbols-outlined {
+  color: var(--primary);
+  font-size: 22px;
+}
+
+/* TAG (badge) */
+.card-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  color: var(--tag-color);
+}
+
+/* Título de la card */
+.card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Descripción */
+.card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* Footer de la card: favorito + abrir */
+.card-footer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Botón "Open Link" */
+.btn-open {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 7px;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-open:hover {
+  background: var(--btn-hover);
+  color: #fff;
+}
+
+/* Botón favorito */
+.btn-fav {
+  padding: 8px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.btn-fav:hover,
+.btn-fav.active {
+  background: rgba(250, 204, 21, 0.1);
+  border-color: #facc15;
+  color: #facc15;
+}
+
+/* ===== NAVBAR PILLS ===== */
+.nav-pill {
+  padding: 6px 14px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.nav-pill:hover {
+  background: var(--primary-dim);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.nav-pill.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* ===== SEARCH INPUT ===== */
+#searchInput {
+  padding: 7px 14px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text);
+  font-size: 0.875rem;
+  min-width: 180px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#searchInput:focus {
+  border-color: var(--primary);
+}
+
+#searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+/* ===== BOTONES HEADER (tema / favoritos) ===== */
+.header-controls button {
+  padding: 7px 12px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.header-controls button:hover {
+  background: var(--primary-dim);
+  border-color: var(--primary);
+}
+
+.header-controls button.active {
+  background: rgba(250, 204, 21, 0.1);
+  border-color: #facc15;
+}
+
