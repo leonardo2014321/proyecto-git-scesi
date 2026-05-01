@@ -7,3 +7,11 @@ const state = {
 };
 
 const categories = Object.keys(resources);
+
+function renderResources() {
+  const app = document.getElementById("app");
+
+  if (!app) return;
+
+  app.innerHTML = "<p>Loading...</p>";
+}
