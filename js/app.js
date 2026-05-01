@@ -16,4 +16,18 @@ const categories = Object.keys(resources);
 function renderResources() {
   const app = document.getElementById("app");
   app.innerHTML = "";
+
+  const filtered = applyFilters(
+    resources,
+    state.searchText,
+    state.activeCategory
+  );
+
+  Object.entries(filtered).forEach(([category, items]) => {
+    if (items.length > 0) {
+      app.appendChild(
+        createSection(category, items)
+      );
+    }
+  });
 }
