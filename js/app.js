@@ -43,3 +43,10 @@ function renderResources() {
     }
   });
 }
+
+document
+  .getElementById("searchInput")
+  .addEventListener("input", (e) => {
+    state.searchText = e.target.value;
+    renderResources();
+  });
