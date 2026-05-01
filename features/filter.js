@@ -23,4 +23,22 @@ export function filterBySearch(items, text) {
  * @param {boolean} showFavOnly
  * @param {string[]} favorites
  */
+export function applyFilters(resourceMap, searchText, activeCategory, showFavOnly, favorites) {
+  const categories = activeCategory === "all"
+    ? Object.keys(resourceMap)
+    : [activeCategory];
+
+  const result = {};
+
+  for (const cat of categories) {
+    let items = resourceMap[cat] || [];
+
+    if (showFavOnly) {
+      items = items.filter(r => favorites.includes(r.title));
+    }
+
+    items = filterBySearch(items, searchText);
+
+    result[cat] = items;
+  }
 
