@@ -88,7 +88,7 @@ body.light header {
 
 /* ===== MENSAJE VACÍO ===== */
 .empty-msg {
-  text-align: center;
+  text-align: left;
   color: var(--text-muted);
   padding: 48px 0;
   font-size: 1rem;
