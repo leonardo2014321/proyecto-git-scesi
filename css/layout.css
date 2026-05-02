@@ -79,11 +79,11 @@ body.light header {
 }
 
 @media (min-width: 640px) {
-  .cards-grid { grid-template-columns: repeat(4, 1fr); }
+  .cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (min-width: 1024px) {
-  .cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .cards-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ===== MENSAJE VACÍO ===== */
