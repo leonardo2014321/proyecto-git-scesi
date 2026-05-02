@@ -77,8 +77,8 @@
 
 **🧩 Alan**<br>
 ![Componentes](https://img.shields.io/badge/Componentes-d2a8ff?style=flat-square&logoColor=000)<br>
-📧 alan@example.com<br>
-📱 +591 70000004
+📧 alanmora011299@gmail.com<br>
+📱 +591 62615493
 
 </td>
 </tr></table>
