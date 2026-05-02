@@ -41,13 +41,13 @@
 
 <td width="50%">
 <table><tr>
-<td><img src="./assets/emanuel.jpeg" width="90"/></td>
+<td><img src="./assets/emanuel.png" width="90"/></td>
 <td>
 
 **🧑‍🎨 Emanuel**<br>
 ![UI & CSS](https://img.shields.io/badge/UI_%26_CSS-f78166?style=flat-square)<br>
-📧 emanuel@example.com<br>
-📱 +591 70000002
+📧 emanuel.hurtado.cast@gmail.com<br>
+📱 +591 77424836
 
 </td>
 </tr></table>
