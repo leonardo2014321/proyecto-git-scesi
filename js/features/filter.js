@@ -7,7 +7,7 @@
  * @param {string} text
  */
 export function filterBySearch(items, text) {
-   if (!text.trim()) return items;
+  if (!text.trim()) return items;
   const q = text.toLowerCase();
   return items.filter(r =>
     r.title.toLowerCase().includes(q) ||
@@ -23,7 +23,7 @@ export function filterBySearch(items, text) {
  * @param {boolean} showFavOnly
  * @param {string[]} favorites
  */
-export function applyFilters(resourceMap, searchText, activeCategory,showFavonly,favotites) {
+export function applyFilters(resourceMap, searchText, activeCategory, showFavOnly, favorites) {
   const categories = activeCategory === "all"
     ? Object.keys(resourceMap)
     : [activeCategory];
@@ -32,7 +32,8 @@ export function applyFilters(resourceMap, searchText, activeCategory,showFavonly
 
   for (const cat of categories) {
     let items = resourceMap[cat] || [];
-   if (showFavOnly) {
+
+    if (showFavOnly) {
       items = items.filter(r => favorites.includes(r.title));
     }
 
@@ -40,5 +41,6 @@ export function applyFilters(resourceMap, searchText, activeCategory,showFavonly
 
     result[cat] = items;
   }
-return result;
+
+  return result;
 }
