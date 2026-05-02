@@ -58,13 +58,13 @@
 
 <td width="50%">
 <table><tr>
-<td><img src="./assets/cristofer.jpeg" width="90"/></td>
+<td><img src="./assets/image-cristofer.jpg" width="90"/></td>
 <td>
 
 **⚙️ Cristofer**<br>
 ![Filtros & Storage](https://img.shields.io/badge/Filtros_%26_Storage-3fb950?style=flat-square)<br>
-📧 cristofer@example.com<br>
-📱 +591 70000003
+📧 cristoferop2005@gmail.com<br>
+📱 +591 67489206
 
 </td>
 </tr></table>
