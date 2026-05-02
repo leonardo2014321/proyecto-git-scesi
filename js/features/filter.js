@@ -40,5 +40,5 @@ export function applyFilters(resourceMap, searchText, activeCategory,showFavonly
 
     result[cat] = items;
   }
-
+return result;
 }
