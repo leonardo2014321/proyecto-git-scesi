@@ -7,7 +7,7 @@
  * @param {string} text
  */
 export function filterBySearch(items, text) {
-  if (!text.trim()) return items;
+   if (!text.trim()) return items;
   const q = text.toLowerCase();
   return items.filter(r =>
     r.title.toLowerCase().includes(q) ||
