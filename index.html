@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevLinks</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <h1 class="logo">DevLinks</h1>
+
+      <div class="header-controls">
+        <input id="searchInput" type="text" placeholder="Buscar recursos..." />
+        <button id="btnFavoritos" title="Ver favoritos">⭐</button>
+        <button id="toggleTheme" title="Cambiar tema">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVBAR CATEGORÍAS -->
+  <nav id="navbar"></nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="app"></main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 DevLinks — Recursos para desarrolladores</p>
+  </footer>
+
+  <!-- Scripts (type module para imports entre archivos) -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
