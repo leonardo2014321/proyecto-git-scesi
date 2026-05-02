@@ -88,7 +88,7 @@ body.light header {
 
 /* ===== MENSAJE VACÍO ===== */
 .empty-msg {
-  text-align: left;
+  text-align: center;
   color: var(--text-muted);
   padding: 48px 0;
   font-size: 1rem;
@@ -96,7 +96,7 @@ body.light header {
 
 /* ===== FOOTER ===== */
 footer {
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--border);
   text-align: center;
   padding: 20px;
   color: var(--text-muted);
