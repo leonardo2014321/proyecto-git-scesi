@@ -365,53 +365,50 @@ cd proyecto-git-scesi
 
 <div style="background:#0d1117; padding:20px; border-radius:12px; border:1px solid #30363d; color:#c9d1d9;">
 
-### ⚠️ Nota importante
+### 🌐 Demo en línea (recomendado)
 
-Este proyecto utiliza módulos de JavaScript, por lo que **no funcionará correctamente abriendo el archivo `index.html` directamente** debido a restricciones de CORS del navegador.
+El proyecto está desplegado en GitHub Pages y puedes verlo directamente sin instalar nada:
 
-Es necesario ejecutar un servidor local.
+👉 https://leonardo2014321.github.io/proyecto-git-scesi/
 
 <br>
 
-### 📦 Requisitos
+### 💻 Ejecución local (opcional)
 
-- Tener instalado <strong>Node.js</strong> (incluye <code>npm</code>)
-- Verificar instalación:
+Si deseas ejecutarlo en local para desarrollo:
+
+#### 📦 Requisitos
+- Node.js instalado (incluye npm)
+
+Verifica instalación:
 
 <pre style="background:#010409; padding:15px; border-radius:10px; border:1px solid #30363d; color:#58A6FF;">
 node -v
 npm -v
 </pre>
 
-<br>
+#### 🚀 Levantar servidor local
 
-### 🚀 Opción recomendada
-
-Ejecutar un servidor local con <code>npx</code>:
+Opción 1 (recomendada):
 
 <pre style="background:#010409; padding:15px; border-radius:10px; border:1px solid #30363d; color:#3fb950;">
 npx serve
 </pre>
 
-Luego abrir en el navegador:
-
-<pre style="background:#010409; padding:15px; border-radius:10px; border:1px solid #30363d; color:#58A6FF;">
-http://localhost:3000
-</pre>
-
-<br>
-
-### 🔁 Alternativa
+Opción 2:
 
 <pre style="background:#010409; padding:15px; border-radius:10px; border:1px solid #30363d; color:#3fb950;">
 npx http-server
 </pre>
 
-<br>
+Luego abrir:
 
-### 💡 Recomendación adicional
+<pre style="background:#010409; padding:15px; border-radius:10px; border:1px solid #30363d; color:#58A6FF;">
+http://localhost:3000
+</pre>
 
-También puedes usar la extensión <strong>Live Server</strong> en VS Code para ejecutar el proyecto fácilmente.
+#### 💡 Alternativa rápida
+Usar extensión **Live Server** en VS Code.
 
 </div>
 
